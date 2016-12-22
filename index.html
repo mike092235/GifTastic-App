@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Animal Search</title>
+  <title>GifTastic Dessert Search</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+  <header id="header">
+    <h1>Mike's GifTastic Dessert Search</h1>
+  </header>
 
-  <div id="animalButtons">
+  <div>
+    <div id="content">
+      <h2>Click the buttons below to retrieve some of your favorite GIFs or create a button of your own!</h2>
 
-  </div>
+      <div id="default-buttons"></div>
+    </div>
 
-  <form id="animal-form">
-    <label for="animal-input">Add an Animal</label>
-    <input type="addAnimal" type="submit" value="Submit">
-  </form>
+    <form id="dessert-form">
+      <label for="dessert-input">Add a custom button</label>
+      <input type="text" id="dessert-input">
 
-  <div id="animals">
+      <input id="addDessert" type="submit" value="Submit">
+    </form>
 
-  </div>
+    <div id="desserts-gifs">
 
+    </div>
+  </div> 
 
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 <script src="assets/javascript/app.js"></script>
