@@ -1,6 +1,6 @@
 // var api = "http://api.giphy.com/v1/gifs/search?";
 // var apiKey = "&api_key=dc6zaTOxFJmzC";
-// var query = "&q=" + topic  
+// var query = "&q=" + topic
 // var topic = ""
 
 $(function(){ //anything in here will appear on page load
@@ -49,7 +49,7 @@ $(document).on('click','.searchImage',function(){
   var state = $(this).data('state');
   if(state == 'still'){
     $(this).attr('src',$(this).data('animated'));
-    $(this).attr('data-state','animated');    
+    $(this).attr('data-state','animated');
   }else{
     $(this).attr('src',$(this).data('still'));
     $(this).attr('data-state','still'); 
@@ -62,15 +62,3 @@ $('#addSearch').on('click',function(){
   populateButtons(searchArray,'searchButton','#buttonsArea');
   return false;
 })
-
-
-
-
-
-
-
-
-
-
-
-
